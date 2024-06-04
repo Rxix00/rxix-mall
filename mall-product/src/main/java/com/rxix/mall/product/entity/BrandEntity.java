@@ -8,11 +8,11 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * Æ·ÅÆ
+ * 品牌
  * 
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @Data
 @TableName("pms_brand")
@@ -20,32 +20,32 @@ public class BrandEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Æ·ÅÆid
+	 * 品牌id
 	 */
 	@TableId
 	private Long brandId;
 	/**
-	 * Æ·ÅÆÃû
+	 * 品牌名
 	 */
 	private String name;
 	/**
-	 * Æ·ÅÆlogoµØÖ·
+	 * 品牌logo地址
 	 */
 	private String logo;
 	/**
-	 * ½éÉÜ
+	 * 介绍
 	 */
 	private String descript;
 	/**
-	 * ÏÔÊ¾×´Ì¬[0-²»ÏÔÊ¾£»1-ÏÔÊ¾]
+	 * 显示状态[0-不显示；1-显示]
 	 */
 	private Integer showStatus;
 	/**
-	 * ¼ìË÷Ê××ÖÄ¸
+	 * 检索首字母
 	 */
 	private String firstLetter;
 	/**
-	 * ÅÅÐò
+	 * 排序
 	 */
 	private Integer sort;
 

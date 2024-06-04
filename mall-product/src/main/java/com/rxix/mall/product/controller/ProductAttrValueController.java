@@ -18,11 +18,11 @@ import com.rxix.common.utils.R;
 
 
 /**
- * spuÊôÐÔÖµ
+ * spu属性值
  *
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @RestController
 @RequestMapping("product/productattrvalue")
