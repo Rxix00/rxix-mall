@@ -8,11 +8,11 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ÉÌÆ·ÆÀ¼Û
+ * 商品评价
  * 
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @Data
 @TableName("pms_spu_comment")
@@ -33,55 +33,55 @@ public class SpuCommentEntity implements Serializable {
 	 */
 	private Long spuId;
 	/**
-	 * ÉÌÆ·Ãû×Ö
+	 * 商品名字
 	 */
 	private String spuName;
 	/**
-	 * »áÔ±êÇ³Æ
+	 * 会员昵称
 	 */
 	private String memberNickName;
 	/**
-	 * ÐÇ¼¶
+	 * 星级
 	 */
 	private Integer star;
 	/**
-	 * »áÔ±ip
+	 * 会员ip
 	 */
 	private String memberIp;
 	/**
-	 * ´´½¨Ê±¼ä
+	 * 创建时间
 	 */
 	private Date createTime;
 	/**
-	 * ÏÔÊ¾×´Ì¬[0-²»ÏÔÊ¾£¬1-ÏÔÊ¾]
+	 * 显示状态[0-不显示，1-显示]
 	 */
 	private Integer showStatus;
 	/**
-	 * ¹ºÂòÊ±ÊôÐÔ×éºÏ
+	 * 购买时属性组合
 	 */
 	private String spuAttributes;
 	/**
-	 * µãÔÞÊý
+	 * 点赞数
 	 */
 	private Integer likesCount;
 	/**
-	 * »Ø¸´Êý
+	 * 回复数
 	 */
 	private Integer replyCount;
 	/**
-	 * ÆÀÂÛÍ¼Æ¬/ÊÓÆµ[jsonÊý¾Ý£»[{type:ÎÄ¼þÀàÐÍ,url:×ÊÔ´Â·¾¶}]]
+	 * 评论图片/视频[json数据；[{type:文件类型,url:资源路径}]]
 	 */
 	private String resources;
 	/**
-	 * ÄÚÈÝ
+	 * 内容
 	 */
 	private String content;
 	/**
-	 * ÓÃ»§Í·Ïñ
+	 * 用户头像
 	 */
 	private String memberIcon;
 	/**
-	 * ÆÀÂÛÀàÐÍ[0 - ¶ÔÉÌÆ·µÄÖ±½ÓÆÀÂÛ£¬1 - ¶ÔÆÀÂÛµÄ»Ø¸´]
+	 * 评论类型[0 - 对商品的直接评论，1 - 对评论的回复]
 	 */
 	private Integer commentType;
 

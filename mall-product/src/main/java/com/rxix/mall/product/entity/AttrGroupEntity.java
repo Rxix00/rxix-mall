@@ -8,11 +8,11 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ÊôÐÔ·Ö×é
+ * 属性分组
  * 
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @Data
 @TableName("pms_attr_group")
@@ -20,28 +20,28 @@ public class AttrGroupEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * ·Ö×éid
+	 * 分组id
 	 */
 	@TableId
 	private Long attrGroupId;
 	/**
-	 * ×éÃû
+	 * 组名
 	 */
 	private String attrGroupName;
 	/**
-	 * ÅÅÐò
+	 * 排序
 	 */
 	private Integer sort;
 	/**
-	 * ÃèÊö
+	 * 描述
 	 */
 	private String descript;
 	/**
-	 * ×éÍ¼±ê
+	 * 组图标
 	 */
 	private String icon;
 	/**
-	 * ËùÊô·ÖÀàid
+	 * 所属分类id
 	 */
 	private Long catelogId;
 

@@ -7,11 +7,11 @@ import com.rxix.mall.product.entity.AttrGroupEntity;
 import java.util.Map;
 
 /**
- * ÊôÐÔ·Ö×é
+ * 属性分组
  *
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 public interface AttrGroupService extends IService<AttrGroupEntity> {
 

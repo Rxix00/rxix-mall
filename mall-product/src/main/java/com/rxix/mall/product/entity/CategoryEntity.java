@@ -8,11 +8,11 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ÉÌÆ·Èý¼¶·ÖÀà
+ * 商品三级分类
  * 
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @Data
 @TableName("pms_category")
@@ -20,40 +20,40 @@ public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * ·ÖÀàid
+	 * 分类id
 	 */
 	@TableId
 	private Long catId;
 	/**
-	 * ·ÖÀàÃû³Æ
+	 * 分类名称
 	 */
 	private String name;
 	/**
-	 * ¸¸·ÖÀàid
+	 * 父分类id
 	 */
 	private Long parentCid;
 	/**
-	 * ²ã¼¶
+	 * 层级
 	 */
 	private Integer catLevel;
 	/**
-	 * ÊÇ·ñÏÔÊ¾[0-²»ÏÔÊ¾£¬1ÏÔÊ¾]
+	 * 是否显示[0-不显示，1显示]
 	 */
 	private Integer showStatus;
 	/**
-	 * ÅÅÐò
+	 * 排序
 	 */
 	private Integer sort;
 	/**
-	 * Í¼±êµØÖ·
+	 * 图标地址
 	 */
 	private String icon;
 	/**
-	 * ¼ÆÁ¿µ¥Î»
+	 * 计量单位
 	 */
 	private String productUnit;
 	/**
-	 * ÉÌÆ·ÊýÁ¿
+	 * 商品数量
 	 */
 	private Integer productCount;
 

@@ -8,11 +8,11 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * ÉÌÆ·ÊôÐÔ
+ * 商品属性
  * 
  * @author rxix
  * @email w937088290@gmail.com
- * @date 2024-06-03 22:08:10
+ * @date 2024-06-04 17:49:27
  */
 @Data
 @TableName("pms_attr")
@@ -20,40 +20,40 @@ public class AttrEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * ÊôÐÔid
+	 * 属性id
 	 */
 	@TableId
 	private Long attrId;
 	/**
-	 * ÊôÐÔÃû
+	 * 属性名
 	 */
 	private String attrName;
 	/**
-	 * ÊÇ·ñÐèÒª¼ìË÷[0-²»ÐèÒª£¬1-ÐèÒª]
+	 * 是否需要检索[0-不需要，1-需要]
 	 */
 	private Integer searchType;
 	/**
-	 * ÊôÐÔÍ¼±ê
+	 * 属性图标
 	 */
 	private String icon;
 	/**
-	 * ¿ÉÑ¡ÖµÁÐ±í[ÓÃ¶ººÅ·Ö¸ô]
+	 * 可选值列表[用逗号分隔]
 	 */
 	private String valueSelect;
 	/**
-	 * ÊôÐÔÀàÐÍ[0-ÏúÊÛÊôÐÔ£¬1-»ù±¾ÊôÐÔ£¬2-¼ÈÊÇÏúÊÛÊôÐÔÓÖÊÇ»ù±¾ÊôÐÔ]
+	 * 属性类型[0-销售属性，1-基本属性，2-既是销售属性又是基本属性]
 	 */
 	private Integer attrType;
 	/**
-	 * ÆôÓÃ×´Ì¬[0 - ½ûÓÃ£¬1 - ÆôÓÃ]
+	 * 启用状态[0 - 禁用，1 - 启用]
 	 */
 	private Long enable;
 	/**
-	 * ËùÊô·ÖÀà
+	 * 所属分类
 	 */
 	private Long catelogId;
 	/**
-	 * ¿ìËÙÕ¹Ê¾¡¾ÊÇ·ñÕ¹Ê¾ÔÚ½éÉÜÉÏ£»0-·ñ 1-ÊÇ¡¿£¬ÔÚskuÖÐÈÔÈ»¿ÉÒÔµ÷Õû
+	 * 快速展示【是否展示在介绍上；0-否 1-是】，在sku中仍然可以调整
 	 */
 	private Integer showDesc;
 
