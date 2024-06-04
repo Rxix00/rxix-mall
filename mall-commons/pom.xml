@@ -27,11 +27,11 @@
         </dependency>
 
         <!-- mysql依赖 -->
-                <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                    <version>8.0.11</version>
-                </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+        </dependency>
 
         <!-- 添加lombok的依赖 -->
         <dependency>
@@ -57,5 +57,12 @@
             <version>2.0.2</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>2021.1</version>
+        </dependency>
+
     </dependencies>
 </project>
