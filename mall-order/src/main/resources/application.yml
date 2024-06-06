@@ -21,3 +21,8 @@ mybatis-plus:
 
 server:
   port: 8030
+
+user:
+  userName: 张三1
+  age: 28
+
