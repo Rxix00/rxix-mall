@@ -1,0 +1,23 @@
+#注册中心的信息
+spring:
+  application:
+    name: mall-getway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.100:8848
+#测试网关路由规则配置
+    gateway:
+      routes:
+        - id: router1
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url,baidu
+        - id: router2
+          uri: https://www.jd.com
+          predicates:
+            - Query=url,jd
+
+#指定注册中心的服务端看
+server:
+  port: 8070

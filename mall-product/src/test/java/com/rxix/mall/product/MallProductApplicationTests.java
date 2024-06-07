@@ -1,5 +1,6 @@
 package com.rxix.mall.product;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.rxix.mall.product.entity.AttrEntity;
 import com.rxix.mall.product.entity.BrandEntity;
 import com.rxix.mall.product.service.AttrService;
@@ -24,15 +25,17 @@ class MallProductApplicationTests {
     void contextLoads() {
         BrandEntity entity = new BrandEntity();
         entity.setName("小米");
-        brandService.save(entity);
+//        brandService.save(entity);
         AttrEntity attrEntity = new AttrEntity();
         attrEntity.setAttrName("华为");
         attrService.save(attrEntity);
+        entity.setName("手机卡来得及");
+        brandService.save(entity);
     }
 
     @Test
     void selectAll() {
-        List<BrandEntity> list = brandService.list();
+        List<BrandEntity> list = brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id",2));
         for (BrandEntity entity : list) {
             System.out.println(entity);
         }

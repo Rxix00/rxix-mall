@@ -18,6 +18,7 @@
         <module>renren-fast-master</module>
         <module>renren-generator-master</module>
         <module>mall-commons</module>
+        <module>mall-getway</module>
     </modules>
 
 </project>
