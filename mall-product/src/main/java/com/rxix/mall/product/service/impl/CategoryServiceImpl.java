@@ -39,7 +39,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         //查询所有的商品分类，所以条件为空
         List<CategoryEntity> categoryEntities = baseMapper.selectList(null);
         //2.将商品分类信息拆解为树形结构【父子关系】
-        List<CategoryEntity> list = categoryEntities.stream().filter(categoryEntity -> categoryEntity.getParentCid() == 0).map(categoryEntity -> {
+        List<CategoryEntity> list = categoryEntities.stream().filter(categoryEntity -> (categoryEntity.getParentCid() != null && categoryEntity.getParentCid() == 0)).map(categoryEntity -> {
             //根据大类找到多有的小类，递归的方法实现
             categoryEntity.setChildren(getCategoryChildren(categoryEntity, categoryEntities));
             return categoryEntity;
